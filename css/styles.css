@@ -1,0 +1,168 @@
+
+/* **navbar img size** */
+
+.navbar-brand img {
+	max-height: 70px;
+}
+
+/* **navbar color** */
+
+.bg-light {
+	background-color: #cfdeec!important;
+}
+
+/* ** header ** */
+/* pour le clip path https://bennettfeely.com/clippy/ */
+
+header .row {
+	min-height: 70vh;
+	background-image: url(../img/banniere/paysage.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	align-items: center;
+	color: white;
+	clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 90%);
+}
+
+header .formEntretien {
+	background-color: rgba(0,0,0,0.5);
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+
+header .whyMe {
+	display: flex;
+	min-height: 70vh;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-size: 16px;
+	color: black;
+}
+
+header h1 {
+	font-family: 'Raleway', sans-serif;
+}
+
+header h2 {
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 50px;
+}
+
+/*
+ ** mediaquery pour instaurer un breakpoint
+ ** et empecher la classe whyme de s'afficher sur
+ ** telephone
+ */
+
+@media (max-width: 768px) {
+	header .whyMe {
+		display: none;
+	}
+}
+
+#parcours h2 {
+	margin-top: 10px;
+}
+
+#parcours .media span {
+	color: #2d6631;
+	font-size: 3rem;
+	width: 4rem;
+	text-align: center;
+}
+
+#parcours .media{
+	padding: .5rem 1rem;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+#parcours .media:hover{
+	background-color: #cfdeec;
+}
+
+.myWatercolor {
+	min-height: calc(100vh - 70px);
+	background-image: url(../img/exemple/encrier.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.mesPassions {
+	min-height: calc(100vh - 70px);
+	background-color: #d3dae4;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mesPassions span {
+	font-size: 5rem;
+	color: #193d50;
+}
+
+.mesPassions h5 {
+	font-size: 2rem;
+	color: #888;
+}
+
+/* en chantier
+.mesPassions a {
+color: #193d50;
+}
+ */
+
+#contact {
+	min-height: calc(100vh - 70px);
+	background-image: url(../img/banniere/sakura.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#contact .row {
+	min-height: calc(100vh - 70px);
+	align-items: center;
+}
+
+.formContact {
+	background-color: rgba(255,255,225,.7);
+	padding: 2rem 1rem;
+}
+
+#contact button {
+	background-color: #364157;
+	border-color: #364157;
+}
+
+footer {
+	max-height: 50px;
+	text-align: center;
+	background-color: #3b3434;
+	color: #999;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.myFooter .row {
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer a {
+	color: #999;
+	font-size: 2rem;
+	transition: all .2s ease-in-out;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}

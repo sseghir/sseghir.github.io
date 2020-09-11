@@ -34,6 +34,7 @@ header .formEntretien {
 }
 
 header .whyMe {
+	background-color: rgba(244,244,200,0.5);
 	display: flex;
 	min-height: 70vh;
 	align-items: flex-end;
